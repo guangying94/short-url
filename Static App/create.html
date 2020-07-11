@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFurl</title>
+    <link rel="stylesheet" href="static/style.css">
+    
+</head>
+<body>
+    <div class="creation">
+        <form action="" id="createform">
+            Generate
+            <div class="longurl">
+                <input type="text" name="longurl" placeholder="long url" id="longurl">
+            </div>
+            <div class="alias">
+                <input type="text" name="alias" placeholder="alias" id="alias">
+            </div>
+            <button type="submit">Create</button>
+        </form>
+        <div class="short_url">
+            <input type="text" readonly="readonly" onclick="copyToClipboard(this);" style="display:none" id="return">
+        </div>
+    </div>
+
+    <div id="qrcode" class="qrcode" style="display:none"></div>
+
+    
+    <footer>
+        <hr>
+        <div class="footer">
+            <div class="author">© 2020 Marcus Tee | SFurl</div>
+            <div class="link">
+                <a class="ml-3 text-gray-500" href="https://github.com/guangying94">
+                    <img src="static/github.svg">
+                </a>
+                <a class="ml-3 text-gray-500" href="https://medium.com/marcus-tee-anytime">
+                    <img src="static/medium.svg">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="static/qrcode.min.js"></script>
+    <script src="static/create.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "routes": [
+      {
+        "route": "/notfound",
+        "serve": "notfound.html",
+        "statusCode": 200
+      },
+      {
+        "route": "home",
+        "serve": "home.html"
+      },
+      {
+        "route": "/create",
+        "serve": "create.html",
+        "allowedRoles": ["Creator"]
+      },
+      {
+        "route": "/*",
+        "serve": "/index.html",
+        "statusCode": 200
+      }
+    ]
+  }
